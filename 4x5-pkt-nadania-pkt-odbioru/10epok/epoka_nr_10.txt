@@ -1,0 +1,802 @@
+Epoka nr 10
+MUTACJA dla osobnika nr 44
+ \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.	
+1.	0	0	0	0	2	0	9	4	6	38	0	7		66+
+2.	0	0	0	0	3	0	17	24	14	0	0	8		66+
+3.	0	11	4	0	19	0	0	0	2	0	30	0		66+
+4.	0	0	28	0	0	37	0	0	0	0	0	1		66+
+5.	13	0	0	0	0	18	27	0	0	0	0	8		66+
+6.	4	15	0	18	0	2	0	2	18	0	0	7		66+
+7.	0	0	37	0	8	0	0	0	20	0	0	1		66+
+8.	0	31	0	19	0	4	0	4	0	0	8	0		66+
+9.	48	0	4	0	0	7	0	0	0	0	0	7		66+
+10.	6	4	8	9	7	5	3	1	11	10	0	2		66+
+														=660
+	71+	61+	81+	46+	39+	73+	56+	35+	71+	48+	38+	41	=660
+Wylosowano kolumny {1, 3, 6, 9}
+Wylosowano wiersze {5, 6, 8}
+Podmacierz W wylosowanych punktów
+ \	1.	3.	6.	9.	
+5.	13	0	18	0	
+6.	4	0	2	18	
+8.	0	0	4	0	
+Zauważmy, że sourw[1] = 31, sourw[2] = 24, sourw[3] = 4, destw[1] = 17, destw[2] = 0, destw[3] = 24, destw[4] = 18
+										
+Po ponownej inicjalizacji macierzy W może ona przyjąć nastepującą postać
+ \	1.	3.	6.	9.	
+5.	13	0	0	18	
+6.	0	0	24	0	
+8.	4	0	0	0	
+
+Populacja nr 44 po wykonaniu mutacji
+ \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.	
+1.	0	0	0	0	2	0	9	4	6	38	0	7	66
+2.	0	0	0	0	3	0	17	24	14	0	0	8	66
+3.	0	11	4	0	19	0	0	0	2	0	30	0	66
+4.	0	0	28	0	0	37	0	0	0	0	0	1	66
+5.	13	0	0	0	0	0	27	0	18	0	0	8	66
+6.	0	15	0	18	0	24	0	2	0	0	0	7	66
+7.	0	0	37	0	8	0	0	0	20	0	0	1	66
+8.	4	31	0	19	0	0	0	4	0	0	8	0	66
+9.	48	0	4	0	0	7	0	0	0	0	0	7	66
+10.	6	4	8	9	7	5	3	1	11	10	0	2	66
+													=660
+71	61	81	46	39	73	56	35	71	48	38	41	=660
+
+KRZYŻOWANIE dla osobnika 43ego z 42im
+				OSOBNIK NR43 - V1 											OSOBNIK NR42 - V2
+ \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.			 \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.	
+1.	6	0	0	3	7	19	0	0	0	24	0	7			1.	0	0	1	2	0	3	15	0	16	21	8	0	
+2.	26	3	0	0	1	3	0	0	26	0	0	7			2.	0	0	0	0	0	0	34	8	24	0	0	0	
+3.	0	9	6	0	7	8	0	0	28	0	0	8			3.	0	2	0	0	0	12	0	4	0	10	30	8	
+4.	13	32	0	0	21	0	0	0	0	0	0	0			4.	10	0	0	10	0	38	0	0	0	7	0	1	
+5.	0	6	19	5	0	34	1	0	0	0	0	1			5.	28	0	10	0	0	0	0	21	0	0	0	7	
+6.	9	0	0	0	0	0	32	0	17	0	0	8			6.	0	17	0	0	16	0	4	1	20	0	0	8	
+7.	7	0	0	29	0	5	18	0	0	0	0	7			7.	4	10	14	0	16	15	0	0	0	0	0	7	
+8.	0	0	48	3	0	0	0	0	0	1	14	0			8.	23	16	18	8	0	0	0	0	0	0	0	1	
+9.	0	0	0	0	0	0	0	26	0	16	22	2			9.	0	12	30	17	0	0	0	0	0	0	0	7	
+10.	10	11	8	6	3	4	5	9	0	7	2	1			10.	6	4	8	9	7	5	3	1	11	10	0	2	
+
+				OSOBNIK NR43 - DIV 											OSOBNIK NR42 - REM
+ \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.			 \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.	
+1.	3	0	0	2	3	11	7	0	8	22	4	3			1.	0	0	1	1	1	0	1	0	0	1	0	1	6
+2.	13	1	0	0	0	1	17	4	25	0	0	3			2.	0	1	0	0	1	1	0	0	0	0	0	1	4
+3.	0	5	3	0	3	10	0	2	14	5	15	8			3.	0	1	0	0	1	0	0	0	0	0	0	0	2
+4.	11	16	0	5	10	19	0	0	0	3	0	0			4.	1	0	0	0	1	0	0	0	0	1	0	1	4
+5.	14	3	14	2	0	17	0	10	0	0	0	4			5.	0	0	1	1	0	0	1	1	0	0	0	0	4
+6.	4	8	0	0	8	0	18	0	18	0	0	8			6.	1	1	0	0	0	0	0	1	1	0	0	0	4
+7.	5	5	7	14	8	10	9	0	0	0	0	7			7.	1	0	0	1	0	0	0	0	0	0	0	0	2
+8.	11	8	33	5	0	0	0	0	0	0	7	0			8.	1	0	0	1	0	0	0	0	0	1	0	1	4
+9.	0	6	15	8	0	0	0	13	0	8	11	4			9.	0	0	0	1	0	0	0	0	0	0	0	1	2
+10.	8	7	8	7	5	4	4	5	5	8	1	1			10.	0	1	0	1	0	1	0	0	1	1	0	1	6
+																4	4	2	6	4	2	2	2	2	4	0	6
+
+				OSOBNIK NR43 - REM1 											OSOBNIK NR42 - REM2
+ \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.			 \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.	
+1.	0	0	1	1	1	0	0	0	0	0	0	0	3		1.	0	0	0	0	0	0	1	0	0	1	0	1	3
+2.	0	1	0	0	1	0	0	0	0	0	0	0	2		2.	0	0	0	0	0	1	0	0	0	0	0	1	2
+3.	0	1	0	0	0	0	0	0	0	0	0	0	1		3.	0	0	0	0	1	0	0	0	0	0	0	0	1
+4.	1	0	0	0	0	0	0	0	0	1	0	0	2		4.	0	0	0	0	1	0	0	0	0	0	0	1	2
+5.	0	0	0	1	0	0	1	0	0	0	0	0	2		5.	0	0	1	0	0	0	0	1	0	0	0	0	2
+6.	1	0	0	0	0	0	0	1	0	0	0	0	2		6.	0	1	0	0	0	0	0	0	1	0	0	0	2
+7.	0	0	0	1	0	0	0	0	0	0	0	0	1		7.	1	0	0	0	0	0	0	0	0	0	0	0	1
+8.	0	0	0	0	0	0	0	0	0	1	0	1	2		8.	1	0	0	1	0	0	0	0	0	0	0	0	2
+9.	0	0	0	0	0	0	0	0	0	0	0	1	1		9.	0	0	0	1	0	0	0	0	0	0	0	0	1
+10.	0	0	0	0	0	1	0	0	1	0	0	1	3		10.	0	1	0	1	0	0	0	0	0	1	0	0	3
+	2	2	1	3	2	1	1	1	1	2	0	3			 	2	2	1	3	2	1	1	1	1	2	0	3	
+
+				OSOBNIK NR43 - V3 											OSOBNIK NR42 - V4
+ \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.			 \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.	
+1.	3	0	1	3	4	11	7	0	8	22	4	3			1.	3	0	0	2	3	11	8	0	8	23	4	4	
+2.	13	2	0	0	1	1	17	4	25	0	0	3			2.	13	1	0	0	0	2	17	4	25	0	0	4	
+3.	0	6	3	0	3	10	0	2	14	5	15	8			3.	0	5	3	0	4	10	0	2	14	5	15	8	
+4.	12	16	0	5	10	19	0	0	0	4	0	0			4.	11	16	0	5	11	19	0	0	0	3	0	1	
+5.	14	3	14	3	0	17	1	10	0	0	0	4			5.	14	3	15	2	0	17	0	11	0	0	0	4	
+6.	5	8	0	0	8	0	18	1	18	0	0	8			6.	4	9	0	0	8	0	18	0	19	0	0	8	
+7.	5	5	7	15	8	10	9	0	0	0	0	7			7.	6	5	7	14	8	10	9	0	0	0	0	7	
+8.	11	8	33	5	0	0	0	0	0	1	7	1			8.	12	8	33	6	0	0	0	0	0	0	7	0	
+9.	0	6	15	8	0	0	0	13	0	8	11	5			9.	0	6	15	9	0	0	0	13	0	8	11	4	
+10.	8	7	8	7	5	5	4	5	6	8	1	2			10.	8	8	8	8	5	4	4	5	5	9	1	1	
+	
+Osobnik nr 1
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	11	0	0	9	
+28	0	19	0	9	
+17	4	0	13	0	
+Funkcja oceny: 200
+ indexu = 9
+Osobnik nr 2
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	13	1	
+28	15	13	0	0	
+17	0	0	0	17	
+Funkcja oceny: 400
+ indexu = 9
+Osobnik nr 3
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 9
+Osobnik nr 4
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 9
+Osobnik nr 5
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 5
+Osobnik nr 6
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 9
+Osobnik nr 7
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	2	0	18	
+28	15	0	13	0	
+17	0	17	0	0	
+Funkcja oceny: 336
+ indexu = 9
+Osobnik nr 8
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	11	0	0	9	
+28	0	19	0	9	
+17	4	0	13	0	
+Funkcja oceny: 200
+ indexu = 0
+Osobnik nr 9
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	2	0	18	
+28	15	0	13	0	
+17	0	17	0	0	
+Funkcja oceny: 336
+ indexu = 9
+Osobnik nr 10
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	2	0	0	18	
+28	13	2	13	0	
+17	0	17	0	0	
+Funkcja oceny: 320
+ indexu = 9
+Osobnik nr 11
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 4
+Osobnik nr 12
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	13	1	
+28	15	13	0	0	
+17	0	0	0	17	
+Funkcja oceny: 400
+ indexu = 9
+Osobnik nr 13
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 9
+Osobnik nr 14
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 9
+Osobnik nr 15
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	11	0	0	9	
+28	0	19	0	9	
+17	4	0	13	0	
+Funkcja oceny: 200
+ indexu = 3
+Osobnik nr 16
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 0
+Osobnik nr 17
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 8
+Osobnik nr 18
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	13	1	
+28	15	13	0	0	
+17	0	0	0	17	
+Funkcja oceny: 400
+ indexu = 9
+Osobnik nr 19
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 9
+Osobnik nr 20
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	13	1	
+28	15	13	0	0	
+17	0	0	0	17	
+Funkcja oceny: 400
+ indexu = 9
+Osobnik nr 21
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 1
+Osobnik nr 22
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	2	0	18	
+28	15	0	13	0	
+17	0	17	0	0	
+Funkcja oceny: 336
+ indexu = 9
+Osobnik nr 23
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 2
+Osobnik nr 24
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 5
+Osobnik nr 25
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 9
+Osobnik nr 26
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 0
+Osobnik nr 27
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 7
+Osobnik nr 28
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 5
+Osobnik nr 29
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 9
+Osobnik nr 30
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 3
+Osobnik nr 31
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 9
+Osobnik nr 32
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 4
+Osobnik nr 33
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 1
+Osobnik nr 34
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	11	0	0	9	
+28	0	19	0	9	
+17	4	0	13	0	
+Funkcja oceny: 200
+ indexu = 9
+Osobnik nr 35
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	13	1	
+28	15	13	0	0	
+17	0	0	0	17	
+Funkcja oceny: 400
+ indexu = 9
+Osobnik nr 36
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	2	0	18	
+28	15	0	13	0	
+17	0	17	0	0	
+Funkcja oceny: 336
+ indexu = 9
+Osobnik nr 37
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 3
+Osobnik nr 38
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 9
+Osobnik nr 39
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 0
+Osobnik nr 40
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 1
+Osobnik nr 41
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 9
+Osobnik nr 42
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	2	0	18	
+28	15	0	13	0	
+17	0	17	0	0	
+Funkcja oceny: 336
+ indexu = 9
+Osobnik nr 43
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 9
+Osobnik nr 44
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	2	0	18	
+28	15	0	13	0	
+17	0	17	0	0	
+Funkcja oceny: 336
+ indexu = 9
+Osobnik nr 45
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	0	14	
+28	15	13	0	0	
+17	0	0	13	4	
+Funkcja oceny: 270
+ indexu = 7
+Osobnik nr 46
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 5
+Osobnik nr 47
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	0	6	13	1	
+28	15	13	0	0	
+17	0	0	0	17	
+Funkcja oceny: 400
+ indexu = 9
+Osobnik nr 48
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	11	0	0	9	
+28	0	19	0	9	
+17	4	0	13	0	
+Funkcja oceny: 200
+ indexu = 9
+Osobnik nr 49
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	11	0	0	9	
+28	0	19	0	9	
+17	4	0	13	0	
+Funkcja oceny: 200
+ indexu = 9
+Osobnik nr 50
+ \	15	19	13	18	
+20	3	6	8	4	
+28	6	1	2	5	
+17	7	8	3	9	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	15	19	13	18	
+20	15	0	5	0	
+28	0	19	8	1	
+17	0	0	0	17	
+Funkcja oceny: 278
+ indexu = 9
+
+Najtańszy koszt wynosi = 200

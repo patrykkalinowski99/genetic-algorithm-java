@@ -1,0 +1,116 @@
+Epoka nr 10
+MUTACJA dla osobnika nr 4
+ \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.	
+1.	0	0	0	0	13	25	4	5	0	9	0	10		66+
+2.	11	0	5	2	3	0	19	6	0	9	0	11		66+
+3.	7	15	0	0	0	15	0	0	10	9	0	10		66+
+4.	0	0	0	2	7	12	9	16	0	9	0	11		66+
+5.	22	0	0	11	7	0	13	0	0	7	0	6		66+
+6.	3	0	21	11	13	0	0	5	7	0	0	6		66+
+7.	4	15	9	13	5	2	0	0	7	10	0	1		66+
+8.	0	3	15	0	10	9	8	1	14	0	0	6		66+
+9.	5	0	5	0	14	0	3	0	1	12	15	11		66+
+10.	4	8	2	11	5	6	0	9	7	10	3	1		66+
+														=660
+	56+	41+	57+	50+	77+	69+	56+	42+	46+	75+	18+	73	=660
+Wylosowano kolumny {1, 8, 10, 11}
+Wylosowano wiersze {2, 3, 9}
+Podmacierz W wylosowanych punktów
+ \	1.	8.	10.	11.	
+2.	11	6	9	0	
+3.	7	0	9	0	
+9.	5	0	12	15	
+Zauważmy, że sourw[1] = 26, sourw[2] = 16, sourw[3] = 32, destw[1] = 23, destw[2] = 6, destw[3] = 30, destw[4] = 15
+										
+Po ponownej inicjalizacji macierzy W może ona przyjąć nastepującą postać
+ \	1.	8.	10.	11.	
+2.	0	0	26	0	
+3.	16	0	0	0	
+9.	7	6	4	15	
+
+Populacja nr 4 po wykonaniu mutacji
+ \	1.	2.	3.	4.	5.	6.	7.	8.	9.	10.	11.	12.	
+1.	0	0	0	0	13	25	4	5	0	9	0	10	66
+2.	0	0	5	2	3	0	19	0	0	26	0	11	66
+3.	16	15	0	0	0	15	0	0	10	0	0	10	66
+4.	0	0	0	2	7	12	9	16	0	9	0	11	66
+5.	22	0	0	11	7	0	13	0	0	7	0	6	66
+6.	3	0	21	11	13	0	0	5	7	0	0	6	66
+7.	4	15	9	13	5	2	0	0	7	10	0	1	66
+8.	0	3	15	0	10	9	8	1	14	0	0	6	66
+9.	7	0	5	0	14	0	3	6	1	4	15	11	66
+10.	4	8	2	11	5	6	0	9	7	10	3	1	66
+													=660
+56	41	57	50	77	69	56	42	46	75	18	73	=660
+Osobnik nr 1
+ \	5	15	15	10	
+15	10	0	20	11	
+25	12	7	9	20	
+5	0	14	16	18	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	5	15	15	10	
+15	0	0	5	10	
+25	0	15	10	0	
+5	5	0	0	0	
+Funkcja oceny: 405
+ indexu = 1
+Osobnik nr 2
+ \	5	15	15	10	
+15	10	0	20	11	
+25	12	7	9	20	
+5	0	14	16	18	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	5	15	15	10	
+15	0	0	5	10	
+25	0	15	10	0	
+5	5	0	0	0	
+Funkcja oceny: 405
+ indexu = 2
+Osobnik nr 3
+ \	5	15	15	10	
+15	10	0	20	11	
+25	12	7	9	20	
+5	0	14	16	18	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	5	15	15	10	
+15	5	10	0	0	
+25	0	5	10	10	
+5	0	0	5	0	
+Funkcja oceny: 455
+ indexu = 9
+Osobnik nr 4
+ \	5	15	15	10	
+15	10	0	20	11	
+25	12	7	9	20	
+5	0	14	16	18	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	5	15	15	10	
+15	0	0	15	0	
+25	5	15	0	5	
+5	0	0	0	5	
+Funkcja oceny: 655
+ indexu = 9
+Osobnik nr 5
+ \	5	15	15	10	
+15	10	0	20	11	
+25	12	7	9	20	
+5	0	14	16	18	
+
+Tablica przewozów
+Optymalne rozwiązanie
+ \	5	15	15	10	
+15	5	10	0	0	
+25	0	5	10	10	
+5	0	0	5	0	
+Funkcja oceny: 455
+ indexu = 0
+
+Najtańszy koszt wynosi = 405
